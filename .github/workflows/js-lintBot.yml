@@ -1,0 +1,23 @@
+name: JS Linter
+
+on: 
+  push:
+    paths:
+      - *.jsx
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cloning the repo
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+
+      - name: Installing dependencies
+        run: npm ci
+
+      - name: Lint React Code
+        run: npm run lint
