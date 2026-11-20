@@ -2,8 +2,9 @@ name: JS Linter
 
 on: 
   push:
-    paths:
-      - *.jsx
+    paths: 
+      - '**/*.jsx'
+      - '**/*.js'
 
 jobs:
   lint:
