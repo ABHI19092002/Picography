@@ -27,7 +27,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./Frontend
           push: true
           tags: |
             ${{ secrets.DOCKER_USERNAME }}/picography:latest
