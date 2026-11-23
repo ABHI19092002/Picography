@@ -1,3 +1,4 @@
+#Build docker image for the project and push to Docker hub
 name: CI
 
 on:
@@ -5,4 +6,9 @@ on:
     branches: [main]
 
 jobs:
-  name: 
+  clone:
+    runs-on: ubuntu@latest
+    run:
+      
+
+  docker-build
